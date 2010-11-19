@@ -7,8 +7,21 @@ gem 'rails', '3.0.3'
 group :development do
 gem 'sqlite3-ruby', :require => 'sqlite3'
 end
+
+
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
+group :test do
+  gem 'rspec', '2.0.1'
+  gem 'webrat', '0.7.1'
+end
+
+group :development do
+  gem 'rspec-rails', '2.0.1'
+end
+
 
 # Deploy with Capistrano
 # gem 'capistrano'
